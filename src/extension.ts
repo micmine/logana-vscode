@@ -77,7 +77,7 @@ export function parse(content: string): Array<Message> {
       // Handle windows drive
       let drive = "";
       if (line[1] === ":") {
-        drive = line.substring(0, 2);
+        drive = line.substring(0, 3);
         line = line.substring(3);
       }
 
